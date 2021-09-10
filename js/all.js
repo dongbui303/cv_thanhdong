@@ -1,12 +1,12 @@
 /*common.js*/
 $(function () {
-  //로딩 이미지 제거
+  //Remove loading image
   function removeLoading() {
     $(".loading").fadeOut(800);
     //$(".loading").css({'z-index':'-100'});
   }
 
-  // GNB 생성 함수
+  // GNB generation function
   function gnbMaker() {
     var html = "";
 
@@ -56,7 +56,7 @@ $(function () {
     $(".header").append(html);
   }
 
-  // Footer 생성 함수
+  // Footer creation function
   function footerMaker() {
     var updateDay = "June 3rd";
 
@@ -102,10 +102,10 @@ $(function () {
     footerMaker();
   });
 
-  console.log("안녕하세요! :D");
+  console.log("Hello! :D");
 });
 $(function () {
-  // 전역변수 선언
+  // global variable declaration
   var $body = null;
   var $burger = null;
   var $gnb = null;
@@ -113,7 +113,7 @@ $(function () {
   var tl_nav_show = null;
   var isOnTop = false;
 
-  // 전역에서 사용할 요소 초기화
+  // Initializing an element for use globally
   function init() {
     $body = $("body");
     $burger = $(".menu");
@@ -135,33 +135,33 @@ $(function () {
     tl_nav_show
       .addLabel("menuOpen")
       .staggerFrom(
-        //네비 리스트 보이기
-        [$menu.item_1, $menu.item_2, $menu.item_3], //각 아이템 및 순서
-        0.7, //듀레이션
-        { opacity: 0, top: 20 }, //애니메이션
+        //Show navigation list
+        [$menu.item_1, $menu.item_2, $menu.item_3], //each item and order
+        0.7, //duration
+        { opacity: 0, top: 20 }, //animated movie
         0.2, //간격
         "menuOpen+=0.4"
       )
       .addLabel("menuShow")
       .from(
-        //하단 contact 정보 보이기
-        $contact, //대상
-        0.5, //듀레이션
-        { opacity: 0 }, //애니메이션
-        "menuShow-=0.32" //시간 조절
+        //Show contact information at the bottom
+        $contact, //Target
+        0.5, //duration
+        { opacity: 0 }, //animated movie
+        "menuShow-=0.32" //time control
       );
   }
 
   function openBurgerMenu() {
-    $gnb.addClass("open"); //GNB배경 보이기
-    $burger.addClass("open"); //버거 아이콘 바꾸기
+    $gnb.addClass("open"); //Show GNB background
+    $burger.addClass("open"); //change burger icon
     if ($burger.hasClass("onTop") == true) {
-      //onTop클래스가 있으면 제거
+      //Remove the onTop class if it exists
       isOnTop = true;
       $burger.removeClass("onTop");
     }
-    tl_nav_show.play().timeScale(1); //애니메이션 실행
-    $gnb.addClass("open"); //GNB배경 보이기
+    tl_nav_show.play().timeScale(1); //animated movie 실행
+    $gnb.addClass("open"); //Show GNB background
     preventScroll();
 
     function preventScroll() {
@@ -171,7 +171,7 @@ $(function () {
       $(".menu").css({ right: "+=" + scrollBarWidth() });
     }
 
-    //브라우저별로 달라지는 스크롤바 너비 구하기
+    //Get scrollbar width that varies by browser
     function scrollBarWidth() {
       document.body.style.overflow = "hidden";
       var width = document.body.clientWidth;
@@ -193,15 +193,15 @@ $(function () {
       $("html").removeClass("no_scroll");
     }
 
-    $burger.removeClass("open"); //버거 아이콘 바꾸기
+    $burger.removeClass("open"); //change burger icon
 
-    tl_nav_show.reverse().timeScale(1.8); //애니메이션 실행
+    tl_nav_show.reverse().timeScale(1.8); //animated movie 실행
 
     setTimeout(function () {
-      $gnb.removeClass("open"); //GNB배경 숨기기
+      $gnb.removeClass("open"); //Hide GNB Background
 
       if (isOnTop == true) {
-        //메뉴를 열 때 onTop클래스가 있었으면 다시 추가
+        //If there is an onTop class when opening the menu, add it again
         isOnTop = false;
         $burger.addClass("onTop");
       }
@@ -215,10 +215,10 @@ $(function () {
   function initEvent() {
     $gnb.show();
 
-    //타임라인 애니메이션 (GSAP)
+    //Timeline animated movie (GSAP)
     timeline_nav();
 
-    //메뉴 클릭 시 헤더 오픈/클로즈
+    //Header open/close when menu is clicked
     $burger.on("click", function (evt) {
       evt.preventDefault();
 
@@ -229,7 +229,7 @@ $(function () {
       }
     });
 
-    //메뉴 아이템 클릭 시 버거 닫고 이동
+    //Close and move the burger when clicking the menu item
     $gnb_item.on("click", function (evt) {
       var href = $(this).children("a").attr("href");
       console.log(href);
@@ -268,7 +268,7 @@ $(function () {
   });
 
   $(window).on("load resize", function () {
-    //문서 2/3이상 스크롤 시 on클래스 부여
+    //Give on class when scrolling more than 2/3 of the document
     var scrollBottom = 0;
     var bodyHeight = $(document).height();
     var scrollOverBodyHeight = (bodyHeight / 3) * 2;
@@ -288,13 +288,13 @@ $(function () {
 });
 
 $(function () {
-  // 전역변수 선언
+  // global variable declaration
   var $burger = null;
   var $logo = null;
   var scrollTop = 0;
   var topAreaHeight = 0;
 
-  // 전역에서 사용할 요소 초기화
+  // Initializing an element for use globally
   function init() {
     $burger = $(".menu");
     $logo = $(".logo");
@@ -334,7 +334,7 @@ $(function () {
     $("html,body").stop().animate({ scrollTop: where });
   }
 
-  // 이벤트 초기화
+  // Event initialization
   function initEvent() {
     $(window).on("scroll", function () {
       scrollTop = $(window).scrollTop();
@@ -396,38 +396,38 @@ $(function () {
    2018.05.30
    dongbui303@gmail.com
 
-   메인페이지와 서브페이지 내용을 자동으로 생성합니다.
-   이제 jQuery의 한계를 느낀드아앍@#$!@
+   Automatically create main page and sub page content.
+    Now I feel the limits of jQuery @#$!@
 
 */
 
 // ======================================
 
 /* 
-    [!] 서브 페이지 내용 설정 
+    [!] Set subpage content
 */
 
 var customSubPage = {
-  코인원: {
-    show: true, //메인화면에서 보일지 여부를 선택합니다.
-    name: "coinone", //폴더 및 이미지의 이름입니다. CSS 스타일링 역시 반드시 이 이름으로 지정해야 합니다.
+  // 코인원: {
+  //   show: true, //메인화면에서 보일지 여부를 선택합니다.
+  //   name: "coinone", //폴더 및 이미지의 이름입니다. CSS 스타일링 역시 반드시 이 이름으로 지정해야 합니다.
 
-    title: "Coinone Admin",
-    desc: "코인원의 관리자 계정 페이지", //설명
-    client: "Coinone", //클라이언트
-    role: "UI Development & Design", //역할
-    percent: "(100% &middot; 70%)", //기여도
-    viewCode: true, //true = 코드 링크 있음, false = 코드 링크 없음
+  //   title: "Coinone Admin",
+  //   desc: "코인원의 관리자 계정 페이지", //설명
+  //   client: "Coinone", //클라이언트
+  //   role: "UI Development & Design", //역할
+  //   percent: "(100% &middot; 70%)", //기여도
+  //   viewCode: true, //true = 코드 링크 있음, false = 코드 링크 없음
 
-    detailTitle: "웹퍼블리싱 & 웹디자인 | 구축",
-    detailInfo: [
-      "코인원의 어드민 유저를 위해 만든 관리자 페이지입니다.<br/> 디자이너의 시안 없이, 컬러 가이드만 있는 상태에서 UI 개발을 진행했기에 기억에 남는 작업입니다.<br/>",
-      "기획서를 보면서 바로 작업했기 때문에 제가 할 수 있는 범위가 넓어 즐겁게 작업할 수 있었습니다.<br/> 어드민 페이지이기 때문에 디자인 자체보다는 UX 측면을 중시하려 했고,<br/> 일부 요소들은 문구나 위치 선정에 있어 기획자와 디자이너의 의견을 물어가며 바꿔보기도 했습니다.<br/>",
-      "또, 공통된 디자인 요소가 많았기 때문에 SASS 모듈화를 도입하였습니다.<br/> 주요 컬러는 변수에 넣고, 버튼 스타일은 mixin으로 만들어 빠르게 재사용할 수 있도록 했습니다.",
-    ],
+  //   detailTitle: "웹퍼블리싱 & 웹디자인 | 구축",
+  //   detailInfo: [
+  //     "코인원의 어드민 유저를 위해 만든 관리자 페이지입니다.<br/> 디자이너의 시안 없이, 컬러 가이드만 있는 상태에서 UI 개발을 진행했기에 기억에 남는 작업입니다.<br/>",
+  //     "기획서를 보면서 바로 작업했기 때문에 제가 할 수 있는 범위가 넓어 즐겁게 작업할 수 있었습니다.<br/> 어드민 페이지이기 때문에 디자인 자체보다는 UX 측면을 중시하려 했고,<br/> 일부 요소들은 문구나 위치 선정에 있어 기획자와 디자이너의 의견을 물어가며 바꿔보기도 했습니다.<br/>",
+  //     "또, 공통된 디자인 요소가 많았기 때문에 SASS 모듈화를 도입하였습니다.<br/> 주요 컬러는 변수에 넣고, 버튼 스타일은 mixin으로 만들어 빠르게 재사용할 수 있도록 했습니다.",
+  //   ],
 
-    link: false, //true = 외부링크 있음, flase = 서브페이지 있음
-  },
+  //   link: false, //true = 외부링크 있음, flase = 서브페이지 있음
+  // },
 
   "AR GEAR": {
     show: true,
@@ -447,22 +447,22 @@ var customSubPage = {
     // 'existLink': 'http://argear.io',
   },
 
-  스테이지: {
-    show: true,
-    name: "stayge",
+  // 스테이지: {
+  //   show: true,
+  //   name: "stayge",
 
-    title: "STAYGE One",
-    desc: "랜딩 페이지 (풀반응형)",
-    client: "STAYGE",
-    role: "UI Development",
-    percent: "(100%)",
-    viewCode: false,
-    detailTitle: "웹퍼블리싱 | 구축",
-    detailInfo: [""],
+  //   title: "STAYGE One",
+  //   desc: "랜딩 페이지 (풀반응형)",
+  //   client: "STAYGE",
+  //   role: "UI Development",
+  //   percent: "(100%)",
+  //   viewCode: false,
+  //   detailTitle: "웹퍼블리싱 | 구축",
+  //   detailInfo: [""],
 
-    link: true,
-    // 'existLink' : 'http://stayge.io/',
-  },
+  //   link: true,
+  //   // 'existLink' : 'http://stayge.io/',
+  // },
 
   ICOP: {
     show: true,
@@ -483,21 +483,21 @@ var customSubPage = {
     link: false,
   },
 
-  "파트너스 협약식": {
-    show: true,
-    name: "partners",
+  // "파트너스 협약식": {
+  //   show: true,
+  //   name: "partners",
 
-    title: "Presentation Page",
-    desc: "협약식 체결 화면",
-    client: "the loop",
-    role: "UI Development & Design",
-    percent: "(100%)",
-    viewCode: false,
-    detailTitle: "웹퍼블리싱 | 구축",
-    detailInfo: ["핀테크 랩 파트너스 협약식에 쓰일 view를 퍼블리싱 했습니다."],
+  //   title: "Presentation Page",
+  //   desc: "협약식 체결 화면",
+  //   client: "the loop",
+  //   role: "UI Development & Design",
+  //   percent: "(100%)",
+  //   viewCode: false,
+  //   detailTitle: "웹퍼블리싱 | 구축",
+  //   detailInfo: ["핀테크 랩 파트너스 협약식에 쓰일 view를 퍼블리싱 했습니다."],
 
-    link: true,
-  },
+  //   link: true,
+  // },
 
   실크로드: {
     show: false,
@@ -537,74 +537,74 @@ var customSubPage = {
     show: true,
     name: "changstarr",
 
-    title: "Lyrics for Changstarr",
-    desc: "Changstarr 가사 정보 페이지(웹, 모바일)",
-    client: "D'Amusements",
-    role: "UI Development",
+    title: "B-CARRY",
+    desc: "Rest assured to deliver tofu, soy milk and Japanese dorayaki to Japanese people in Vietnam. I want to convey Japanese food culture to as many Vietnamese people as possible. We will continue to do our best so that our products. Looking forward to more inquiries and advice",
+    client: "Shinichi Fujimoto",
+    role: "UI Development UX",
     percent: "(100%)",
     viewCode: false,
-    detailTitle: "웹퍼블리싱 | 구축",
+    detailTitle: "Web Publishing | build",
     detailInfo: [
-      "앨범의 가사와 해당 가사에 담긴 내용을 보여주는 웹페이지입니다. 반응형이지만 모바일에서 더 나은 성능을 제공하기 위해, userAgent로 모바일 접속을 판단한 뒤 스타일을 분기해 적용시켰습니다.<br/>",
+      "asd제공하기 위해, userAgent로 모바일 접속을 판단한 뒤 스타일을 분기해 적용시켰습니다.<br/>",
       "CSS와 jQuery를 활용해 다양한 효과를 주어, 기존 가사 정보 페이지와 차별화가 느껴지도록 작업했습니다.",
     ],
 
     link: false,
   },
 
-  "3M HCA": {
-    show: true,
-    name: "hca",
+  // "3M HCA": {
+  //   show: true,
+  //   name: "hca",
 
-    title: "3M HCA",
-    desc: "3M 제품 사용자를 위한 플랫폼",
-    client: "3M",
-    role: "UI Development",
-    percent: "(50%)",
-    viewCode: true,
-    detailTitle: "웹퍼블리싱 | 구축, 유지보수",
-    detailInfo: [
-      "3M 제품 사용자를 위한 플랫폼 웹페이지입니다.<br/> 어드민 사이트와 엔드 유저 사이트 둘로 나뉘며, 엔드 유저용 사이트는 반응형으로 제작했습니다.<br/>",
-      "경력 퍼블리셔와 함께 작업을 진행하였고, 그 과정에서 CSS 작성법과 네이밍룰을 배울 수 있었습니다.<br/> 또, 필요한 내용을 요청하는 법, 주석을 남겨 파일을 원활하게 전달하는 법 등 함께 일하면서 필요한 기본 능력 등도 익힐 수 있었습니다.<br/>",
-      "유지보수 분량이 꽤 많았던 작업인데, 기존 CSS를 빠르게 읽고 고치는 방법과,<br/> 다른 CSS를 덮어쓰지 않도록 우선순위를 조정하는 방법 등도 숙지시켜준 즐거운 작업이었습니다.<br/>",
-    ],
+  //   title: "3M HCA",
+  //   desc: "3M 제품 사용자를 위한 플랫폼",
+  //   client: "3M",
+  //   role: "UI Development",
+  //   percent: "(50%)",
+  //   viewCode: true,
+  //   detailTitle: "웹퍼블리싱 | 구축, 유지보수",
+  //   detailInfo: [
+  //     "3M 제품 사용자를 위한 플랫폼 웹페이지입니다.<br/> 어드민 사이트와 엔드 유저 사이트 둘로 나뉘며, 엔드 유저용 사이트는 반응형으로 제작했습니다.<br/>",
+  //     "경력 퍼블리셔와 함께 작업을 진행하였고, 그 과정에서 CSS 작성법과 네이밍룰을 배울 수 있었습니다.<br/> 또, 필요한 내용을 요청하는 법, 주석을 남겨 파일을 원활하게 전달하는 법 등 함께 일하면서 필요한 기본 능력 등도 익힐 수 있었습니다.<br/>",
+  //     "유지보수 분량이 꽤 많았던 작업인데, 기존 CSS를 빠르게 읽고 고치는 방법과,<br/> 다른 CSS를 덮어쓰지 않도록 우선순위를 조정하는 방법 등도 숙지시켜준 즐거운 작업이었습니다.<br/>",
+  //   ],
 
-    link: false,
-  },
+  //   link: false,
+  // },
 
-  "구 포트폴리오": {
-    show: false,
-    name: "old",
+  // "구 포트폴리오": {
+  //   show: false,
+  //   name: "old",
 
-    title: "Old Portfolio",
-    desc: "과거 포트폴리오 (반전매력?!)",
-    client: "ME!",
-    role: "UI Development & Design",
-    percent: "(100%)",
-    viewCode: false,
-    detailTitle: "웹퍼블리싱 & 웹디자인 | 구축",
-    detailInfo: ["개인 포트폴리오"],
+  //   title: "Old Portfolio",
+  //   desc: "과거 포트폴리오 (반전매력?!)",
+  //   client: "ME!",
+  //   role: "UI Development & Design",
+  //   percent: "(100%)",
+  //   viewCode: false,
+  //   detailTitle: "웹퍼블리싱 & 웹디자인 | 구축",
+  //   detailInfo: ["개인 포트폴리오"],
 
-    link: true,
-  },
+  //   link: true,
+  // },
 
-  "SBI 저축은행": {
-    show: true,
-    name: "sbi",
+  // "SBI 저축은행": {
+  //   show: true,
+  //   name: "sbi",
 
-    title: "SBI BANK",
-    desc: "SBI저축은행 하이브리드앱",
-    client: "SBI Bank",
-    role: "UI Development",
-    percent: "(50%)",
-    viewCode: false,
-    detailTitle: "웹퍼블리싱 | 유지보수",
-    detailInfo: [
-      "SBI 저축은행의 앱에 추가로 들어갈 페이지를 만들어 전달드린 작업입니다.<br/> 유지보수 작업이라 쉽게 마쳤던 작업이지만, 다른 사람의 코드를 읽고 활용하는 방법을 배울 수 있었습니다.<br/> 이때 봐두었던 코드 덕분에, 나중에 웹뷰 페이지를 제작할 때 em 개념을 활용한 손쉬운 작업이 가능했습니다.",
-    ],
+  //   title: "SBI BANK",
+  //   desc: "SBI저축은행 하이브리드앱",
+  //   client: "SBI Bank",
+  //   role: "UI Development",
+  //   percent: "(50%)",
+  //   viewCode: false,
+  //   detailTitle: "웹퍼블리싱 | 유지보수",
+  //   detailInfo: [
+  //     "SBI 저축은행의 앱에 추가로 들어갈 페이지를 만들어 전달드린 작업입니다.<br/> 유지보수 작업이라 쉽게 마쳤던 작업이지만, 다른 사람의 코드를 읽고 활용하는 방법을 배울 수 있었습니다.<br/> 이때 봐두었던 코드 덕분에, 나중에 웹뷰 페이지를 제작할 때 em 개념을 활용한 손쉬운 작업이 가능했습니다.",
+  //   ],
 
-    link: false,
-  },
+  //   link: false,
+  // },
 
   "ICON 초기 랜딩페이지": {
     show: false,

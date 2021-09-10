@@ -1,0 +1,14 @@
+{
+  "MinifyAll.terserMinifyOptions": {
+    "mangle": true,
+    "compress": {
+      "drop_console": true,
+      "dead_code": false,
+      "keep_fnames": false,
+      "keep_classnames": false
+    }
+  },
+  "MinifyAll.PrefixOfNewMinifiedFiles": ".min",
+  "MinifyAll.minifyOnSaveToNewFile": true,
+  "MinifyAll.openMinifiedDocument": false
+}
