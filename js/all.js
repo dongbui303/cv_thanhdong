@@ -469,15 +469,15 @@ var customSubPage = {
     name: "icop",
 
     title: "ICO Platform",
-    desc: "펀딩 플랫폼",
+    desc: "Funding platform ",
     client: "ICON Foundation",
     role: "UI Development & Design",
     percent: "(100% &middot; 90%)",
     viewCode: false,
-    detailTitle: "웹퍼블리싱 & 웹디자인 | 구축",
+    detailTitle: "Web Publishing & Web Design | build ",
     detailInfo: [
-      "ICO를 용이하게 관리할 수 있도록 돕는 플랫폼입니다. 작업 기한이 촉박하여 디자이너의 투입 없이, 초기 레이아웃 구성과 퍼블리싱을 동시에 진행했습니다. 가이드 시안이 전혀 없었기에 UID를 보며 마크업과 UI 작업을 빠르게 끝내고 개발단에 전달하는 것을 목표로 작업했습니다.<br/>",
-      "또, React 기반의 작업이여서 컴포넌트 등을 경험할 수 있었습니다. 또, 여러 사람과 작업하면서 버전 관리의 중요성도 깨달았던 작업입니다. style 브랜치를 두고 dev 브랜치와 병합해 나가면서 개발이 완료되는 과정을 함께할 수 있었습니다.",
+      "It is a platform that helps you easily manage your ICO. Due to the tight deadline for work, the initial layout composition and publishing were carried out at the same time without the input of a designer. There was no guide draft at all, so I looked at the UID and worked with the goal of completing the markup and UI work quickly and delivering it to the development team.<br/>",
+      "Also, since it was a React-based work, I was able to experience components, etc. Also, I realized the importance of version control while working with several people. I left the style branch and merged it with the dev branch to see the process of development being completed together. I could. ",
     ],
 
     link: false,
