@@ -521,7 +521,7 @@ var customSubPage = {
     name: "sign",
 
     title: "Chain SIGN",
-    desc: "랜딩 페이지(풀반응형)",
+    desc: "Landdingpage",
     client: "the loop",
     role: "UI Development",
     percent: "(100%)",
@@ -538,7 +538,7 @@ var customSubPage = {
     name: "changstarr",
 
     title: "B-CARRY",
-    desc: "Rest assured to deliver tofu, soy milk and Japanese dorayaki to Japanese people in Vietnam. I want to convey Japanese food culture to as many Vietnamese people as possible. We will continue to do our best so that our products. Looking forward to more inquiries and advice",
+    desc: "Tofu, soy milk and Japanese dorayaki to Japanese people in Vietnam. Japanese food culture",
     client: "Shinichi Fujimoto",
     role: "UI Development UX",
     percent: "(100%)",
