@@ -504,12 +504,12 @@ var customSubPage = {
     name: "silkroad",
 
     title: "silkroad",
-    desc: "랜딩 페이지(풀반응형)",
+    desc: "Landing Page (Full Responsive)",
     client: "silkroad Foundation",
     role: "UI Development",
     percent: "(100%)",
     viewCode: false,
-    detailTitle: "웹퍼블리싱 | 구축",
+    detailTitle: "Web Publishing | build",
     detailInfo: [""],
 
     link: true,
@@ -521,12 +521,12 @@ var customSubPage = {
     name: "sign",
 
     title: "Chain SIGN",
-    desc: "Landdingpage",
+    desc: "Landing Page (Full Responsive)",
     client: "the loop",
     role: "UI Development",
     percent: "(100%)",
     viewCode: false,
-    detailTitle: "웹퍼블리싱 | 구축",
+    detailTitle: "Web Publishing | build ",
     detailInfo: [""],
 
     link: true,
@@ -543,10 +543,9 @@ var customSubPage = {
     role: "UI Design | UX Research | Frontend",
     percent: "(100%)",
     viewCode: false,
-    detailTitle: "Web Publishing | build",
+    detailTitle: "Landing Page (Full Responsive)",
     detailInfo: [
-      "asd제공하기 위해, userAgent로 모바일 접속을 판단한 뒤 스타일을 분기해 적용시켰습니다.<br/>",
-      "CSS와 jQuery를 활용해 다양한 효과를 주어, 기존 가사 정보 페이지와 차별화가 느껴지도록 작업했습니다.",
+      "We want to expand the business network for each store owning a website.<br/>",
     ],
 
     link: false,
@@ -557,16 +556,16 @@ var customSubPage = {
     name: "hca",
 
     title: "Lifestyle Labo",
-    desc: "3M 제품 사용자를 위한 플랫폼",
-    client: "3M",
-    role: "UI Development",
-    percent: "(50%)",
+    desc: "furniture store",
+    client: "Van Lam",
+    role: "UI-UX & Dev",
+    percent: "(90%)",
     viewCode: true,
-    detailTitle: "웹퍼블리싱 | 구축, 유지보수",
+    detailTitle: "Landing Page (Full Responsive)",
     detailInfo: [
-      "3M 제품 사용자를 위한 플랫폼 웹페이지입니다.<br/> 어드민 사이트와 엔드 유저 사이트 둘로 나뉘며, 엔드 유저용 사이트는 반응형으로 제작했습니다.<br/>",
-      "경력 퍼블리셔와 함께 작업을 진행하였고, 그 과정에서 CSS 작성법과 네이밍룰을 배울 수 있었습니다.<br/> 또, 필요한 내용을 요청하는 법, 주석을 남겨 파일을 원활하게 전달하는 법 등 함께 일하면서 필요한 기본 능력 등도 익힐 수 있었습니다.<br/>",
-      "유지보수 분량이 꽤 많았던 작업인데, 기존 CSS를 빠르게 읽고 고치는 방법과,<br/> 다른 CSS를 덮어쓰지 않도록 우선순위를 조정하는 방법 등도 숙지시켜준 즐거운 작업이었습니다.<br/>",
+      "This is a platform web page for users of Lifestyle Labo products.<br/> It is divided into an admin site and an end user site, and the site for end users is responsive.<br/>",
+      "I worked with an experienced publisher, and in the process, I was able to learn CSS writing and naming rules.<br/> Also, I was able to ask for the necessary content and how to smoothly deliver files by leaving comments. I was able to learn basic abilities, etc.<br/>",
+      "It was quite a lot of maintenance, but it was a fun job that taught me how to quickly read and fix existing CSS<br/> and how to adjust priorities to avoid overwriting other CSS.<br/>",
     ],
 
     link: false,
