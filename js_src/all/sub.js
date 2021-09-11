@@ -379,7 +379,7 @@ function generateSubPage() {
       }
 
       html_detailTop +=
-        '<span class="detail_mobile br_m"> 모바일에선 현재 페이지를 확대할 수 있어요! <br/>두 손가락으로 화면을 확대한 뒤 살펴보세요. <i class="detail_ico"></i></span>';
+        '<span class="detail_mobile br_m"> You can zoom in on the current page on mobile! <br/> Zoom in on the screen with two fingers and take a look.<i class="detail_ico"></i></span>';
       html_detailTop += '<span class="detail_line"></span>';
       html_detailTop += "</p></div>";
 
