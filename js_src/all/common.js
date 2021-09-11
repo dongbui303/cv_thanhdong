@@ -1,12 +1,12 @@
 /*common.js*/
 $(function () {
-  //로딩 이미지 제거
+  //remove loading image
   function removeLoading() {
     $(".loading").fadeOut(800);
     //$(".loading").css({'z-index':'-100'});
   }
 
-  // GNB 생성 함수
+  // GNB generation function
   function gnbMaker() {
     var html = "";
 
@@ -56,7 +56,7 @@ $(function () {
     $(".header").append(html);
   }
 
-  // Footer 생성 함수
+  // Footer creation function
   function footerMaker() {
     var updateDay = "June 3rd";
 
