@@ -551,25 +551,25 @@ var customSubPage = {
     link: false,
   },
 
-  "3M HCA": {
-    show: true,
-    name: "hca",
+  // "3M HCA": {
+  //   show: true,
+  //   name: "hca",
 
-    title: "Lifestyle Labo",
-    desc: "furniture store",
-    client: "Van Lam",
-    role: "UI-UX & Dev",
-    percent: "(90%)",
-    viewCode: true,
-    detailTitle: "Landing Page (Full Responsive)",
-    detailInfo: [
-      "This is a platform web page for users of Lifestyle Labo products.<br/> It is divided into an admin site and an end user site, and the site for end users is responsive.<br/>",
-      "I worked with an experienced publisher, and in the process, I was able to learn CSS writing and naming rules.<br/> Also, I was able to ask for the necessary content and how to smoothly deliver files by leaving comments. I was able to learn basic abilities, etc.<br/>",
-      "It was quite a lot of maintenance, but it was a fun job that taught me how to quickly read and fix existing CSS<br/> and how to adjust priorities to avoid overwriting other CSS.<br/>",
-    ],
+  //   title: "Lifestyle Labo",
+  //   desc: "furniture store",
+  //   client: "Van Lam",
+  //   role: "UI-UX & Dev",
+  //   percent: "(90%)",
+  //   viewCode: true,
+  //   detailTitle: "Landing Page (Full Responsive)",
+  //   detailInfo: [
+  //     "This is a platform web page for users of Lifestyle Labo products.<br/> It is divided into an admin site and an end user site, and the site for end users is responsive.<br/>",
+  //     "I worked with an experienced publisher, and in the process, I was able to learn CSS writing and naming rules.<br/> Also, I was able to ask for the necessary content and how to smoothly deliver files by leaving comments. I was able to learn basic abilities, etc.<br/>",
+  //     "It was quite a lot of maintenance, but it was a fun job that taught me how to quickly read and fix existing CSS<br/> and how to adjust priorities to avoid overwriting other CSS.<br/>",
+  //   ],
 
-    link: false,
-  },
+  //   link: false,
+  // },
 
   "구 포트폴리오": {
     show: false,
@@ -621,22 +621,22 @@ var customSubPage = {
     link: true,
   },
 
-  "3M VR 예약페이지": {
-    show: false,
-    name: "vr",
+//   "3M VR 예약페이지": {
+//     show: false,
+//     name: "vr",
 
-    title: "3M VR",
-    desc: "가상현실 체험 예약 페이지 (웹, 모바일)",
-    client: "3M",
-    role: "UI Development",
-    percent: "(100%)",
-    viewCode: true,
-    detailTitle: "웹퍼블리싱 | 구축",
-    detailInfo: [""],
+//     title: "3M VR",
+//     desc: "가상현실 체험 예약 페이지 (웹, 모바일)",
+//     client: "3M",
+//     role: "UI Development",
+//     percent: "(100%)",
+//     viewCode: true,
+//     detailTitle: "웹퍼블리싱 | 구축",
+//     detailInfo: [""],
 
-    link: true,
-  },
-};
+//     link: true,
+//   },
+// };
 
 var subPageList = [];
 
