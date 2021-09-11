@@ -587,23 +587,23 @@ var customSubPage = {
     link: true,
   },
 
-  "SBI 저축은행": {
-    show: true,
-    name: "sbi",
+  // "SBI 저축은행": {
+  //   show: true,
+  //   name: "sbi",
 
-    title: "SBI BANK",
-    desc: "SBI저축은행 하이브리드앱",
-    client: "SBI Bank",
-    role: "UI Development",
-    percent: "(50%)",
-    viewCode: false,
-    detailTitle: "웹퍼블리싱 | 유지보수",
-    detailInfo: [
-      "SBI 저축은행의 앱에 추가로 들어갈 페이지를 만들어 전달드린 작업입니다.<br/> 유지보수 작업이라 쉽게 마쳤던 작업이지만, 다른 사람의 코드를 읽고 활용하는 방법을 배울 수 있었습니다.<br/> 이때 봐두었던 코드 덕분에, 나중에 웹뷰 페이지를 제작할 때 em 개념을 활용한 손쉬운 작업이 가능했습니다.",
-    ],
+  //   title: "SBI BANK",
+  //   desc: "SBI저축은행 하이브리드앱",
+  //   client: "SBI Bank",
+  //   role: "UI Development",
+  //   percent: "(50%)",
+  //   viewCode: false,
+  //   detailTitle: "웹퍼블리싱 | 유지보수",
+  //   detailInfo: [
+  //     "SBI 저축은행의 앱에 추가로 들어갈 페이지를 만들어 전달드린 작업입니다.<br/> 유지보수 작업이라 쉽게 마쳤던 작업이지만, 다른 사람의 코드를 읽고 활용하는 방법을 배울 수 있었습니다.<br/> 이때 봐두었던 코드 덕분에, 나중에 웹뷰 페이지를 제작할 때 em 개념을 활용한 손쉬운 작업이 가능했습니다.",
+  //   ],
 
-    link: false,
-  },
+  //   link: false,
+  // },
 
   "ICON 초기 랜딩페이지": {
     show: false,
@@ -621,22 +621,22 @@ var customSubPage = {
     link: true,
   },
 
-//   "3M VR 예약페이지": {
-//     show: false,
-//     name: "vr",
+  "3M VR 예약페이지": {
+    show: false,
+    name: "vr",
 
-//     title: "3M VR",
-//     desc: "가상현실 체험 예약 페이지 (웹, 모바일)",
-//     client: "3M",
-//     role: "UI Development",
-//     percent: "(100%)",
-//     viewCode: true,
-//     detailTitle: "웹퍼블리싱 | 구축",
-//     detailInfo: [""],
+    title: "3M VR",
+    desc: "가상현실 체험 예약 페이지 (웹, 모바일)",
+    client: "3M",
+    role: "UI Development",
+    percent: "(100%)",
+    viewCode: true,
+    detailTitle: "웹퍼블리싱 | 구축",
+    detailInfo: [""],
 
-//     link: true,
-//   },
-// };
+    link: true,
+  },
+};
 
 var subPageList = [];
 
