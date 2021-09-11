@@ -12,7 +12,7 @@ $(function () {
 
     html += ' <div class="fixed"> ';
     html += ' <h1 class="logo"> ';
-    html += ' <span class="text_hide">N의 포트폴리오</span> ';
+    html += ' <span class="text_hide">D portfolio</span> ';
     html += " <div> ";
     html +=
       ' <svg class="title_logo" enable-background="new 0 0 240 236" version="1.1" viewBox="0 0 100 260" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"> ';
@@ -653,7 +653,7 @@ function checkHasSubPage() {
 }
 
 function generateMainPage() {
-  var myTurn = 0; //아이템이 삽입될 컬럼의 인덱스
+  var myTurn = 0; // Index of the column into which the item will be inserted
 
   for (var i in customSubPage) {
     if (customSubPage[i].show === true) {
@@ -685,7 +685,7 @@ function generateMainPage() {
       mainHtml += " </div> ";
 
       if (customSubPage[i].link === true) {
-        //link 프로퍼티가 true인 경우 링크 주소 변경. 이때, existLink가 있다면 그걸로 변경
+        // If the link property is true, change the link address. At this time, if there is an existLink, change it to it
         if (customSubPage[i].hasOwnProperty("existLink")) {
           mainHtml +=
             ' <a href="' +
@@ -707,10 +707,10 @@ function generateMainPage() {
       mainHtml += "</figure>";
       mainHtml += "</div>";
 
-      $(".work_list .column").eq(myTurn).append(mainHtml); //인덱스 번호에 맞춰 아이템 삽입
+      $(".work_list .column").eq(myTurn).append(mainHtml); // Insert item according to index number
 
       if (myTurn < $(".work_list .column").length - 1) {
-        //컬럼 개수에 맞춰 인덱스 증가
+        //Increase the index according to the number of columns
         myTurn++;
       } else {
         myTurn = 0;
@@ -728,12 +728,12 @@ function generateSubPage() {
   // console.log('maxNum=', maxNum);
 
   for (var i in customSubPage) {
-    //name이 일치하는 경우 서브페이지를 그려냅니다.
+    // If the name matches, draw the subpage.
     if (customSubPage[i].name === pageName) {
-      var num = subPageList.indexOf(pageName) + 1; //현재 페이지가 배열의 몇 번째인지 파악해 num에 대입합니다.
+      var num = subPageList.indexOf(pageName) + 1; // Find out what number the current page is in the array and assign it to num.
 
       // --
-      // hero 화면 생성
+      // create hero screen
       var html_hero = "";
 
       html_hero += '<div class="inner">';
@@ -754,7 +754,7 @@ function generateSubPage() {
       html_hero += '<div class="hero_center">';
 
       if (customSubPage[i].viewCode === true) {
-        //viewCode 프로퍼티가 true라면 링크 추가
+        //Add link if viewCode property is true
         html_hero +=
           '<a href="view_' +
           customSubPage[i].name +
@@ -770,12 +770,11 @@ function generateSubPage() {
       html_hero += "</div>";
 
       // --
-      //detail top 화면 생성
-
+      //create detail top screen
       var html_detailTop = "";
 
       html_detailTop +=
-        '<h2 class="detail_title">B-Carry. <i class="detail_title_sm">' +
+        '<h2 class="detail_title">Lifestyle Labo <i class="detail_title_sm">' +
         customSubPage[i].detailTitle +
         "</i></h2>";
       html_detailTop +=
@@ -804,19 +803,19 @@ function generateSubPage() {
       var prevNum = 0;
       var nextNum = 0;
 
-      //이전 서브페이지의 html 이름을 파악합니다.
+      // Get the html name of the previous subpage.
       function getPrevHtmlName() {
-        var prevHtml = subPageList[num - 2]; //배열에서 2번째 전 요소의 이름을 가져옵니다.
+        var prevHtml = subPageList[num - 2]; //Get the name of the second previous element in the array.
 
         if (prevHtml === undefined) {
-          //이때 에러가 나면
-          prevHtml = subPageList[subPageList.length - 1]; //배열 최대 수에서 가장 마지막을 가져옵니다.
+          // if an error occurs at this time
+          prevHtml = subPageList[subPageList.length - 1]; // Get the last in the maximum number of arrays.
         }
 
         return prevHtml;
       }
 
-      //다음 서브페이지의 html 이름을 파악합니다.
+      // Get the html name of the next subpage.
       function getNextHtmlName() {
         var nextHtml = subPageList[num];
 
@@ -857,7 +856,6 @@ function generateSubPage() {
       $(".detail_bottom").append(html_detailBottom);
       $(".wrap").addClass(customSubPage[i].name);
 
-      //임시
       $("ul.shots a.item_link").on("click", function (evt) {
         evt.preventDefault();
       });
