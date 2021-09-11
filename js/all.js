@@ -776,7 +776,7 @@ function generateSubPage() {
       var html_detailTop = "";
 
       html_detailTop +=
-        '<h2 class="detail_title">WebPub. <i class="detail_title_sm">' +
+        '<h2 class="detail_title">B-Carry. <i class="detail_title_sm">' +
         customSubPage[i].detailTitle +
         "</i></h2>";
       html_detailTop +=
@@ -793,12 +793,12 @@ function generateSubPage() {
       html_detailTop += "</p></div>";
 
       // --
-      //detail main 화면에 alt 삽입 (lazyload 때문에 이미지는 html에 직접 작성하기로 함...)
+      //Insert alt in the detail main screen (I decided to write the image directly in html because of lazyload...)
 
       $(".shots_item_img").attr("alt", customSubPage[i].title + " Image");
 
       // --
-      //detail bottom 화면 생성
+      //create detail bottom screen
       var html_detailBottom = "";
       html_detailBottom += '<div class="bottom_inner">';
 
