@@ -429,23 +429,23 @@ var customSubPage = {
   //   link: false, //true = 외부링크 있음, flase = 서브페이지 있음
   // },
 
-  "AR GEAR": {
-    show: true,
-    name: "arGear",
+  // "AR GEAR": {
+  //   show: true,
+  //   name: "arGear",
 
-    title: "AR GEAR",
-    desc: "랜딩 페이지 (풀반응형)",
-    client: "AR GEAR",
-    role: "UI Development",
-    percent: "(100%)",
+  //   title: "AR GEAR",
+  //   desc: "랜딩 페이지 (풀반응형)",
+  //   client: "AR GEAR",
+  //   role: "UI Development",
+  //   percent: "(100%)",
 
-    viewCode: true,
-    detailTitle: "웹퍼블리싱 | 구축",
-    detailInfo: [""],
+  //   viewCode: true,
+  //   detailTitle: "웹퍼블리싱 | 구축",
+  //   detailInfo: [""],
 
-    link: true,
-    // 'existLink': 'http://argear.io',
-  },
+  //   link: true,
+  //   // 'existLink': 'http://argear.io',
+  // },
 
   // 스테이지: {
   //   show: true,
@@ -540,7 +540,7 @@ var customSubPage = {
     title: "B-CARRY",
     desc: "Tofu, soy milk and Japanese dorayaki to Japanese people in Vietnam. Japanese food culture",
     client: "Shinichi Fujimoto",
-    role: "UI Development UX",
+    role: "UI Design | UX Research | Frontend",
     percent: "(100%)",
     viewCode: false,
     detailTitle: "Web Publishing | build",
@@ -552,59 +552,59 @@ var customSubPage = {
     link: false,
   },
 
-  // "3M HCA": {
-  //   show: true,
-  //   name: "hca",
+  "3M HCA": {
+    show: true,
+    name: "hca",
 
-  //   title: "3M HCA",
-  //   desc: "3M 제품 사용자를 위한 플랫폼",
-  //   client: "3M",
-  //   role: "UI Development",
-  //   percent: "(50%)",
-  //   viewCode: true,
-  //   detailTitle: "웹퍼블리싱 | 구축, 유지보수",
-  //   detailInfo: [
-  //     "3M 제품 사용자를 위한 플랫폼 웹페이지입니다.<br/> 어드민 사이트와 엔드 유저 사이트 둘로 나뉘며, 엔드 유저용 사이트는 반응형으로 제작했습니다.<br/>",
-  //     "경력 퍼블리셔와 함께 작업을 진행하였고, 그 과정에서 CSS 작성법과 네이밍룰을 배울 수 있었습니다.<br/> 또, 필요한 내용을 요청하는 법, 주석을 남겨 파일을 원활하게 전달하는 법 등 함께 일하면서 필요한 기본 능력 등도 익힐 수 있었습니다.<br/>",
-  //     "유지보수 분량이 꽤 많았던 작업인데, 기존 CSS를 빠르게 읽고 고치는 방법과,<br/> 다른 CSS를 덮어쓰지 않도록 우선순위를 조정하는 방법 등도 숙지시켜준 즐거운 작업이었습니다.<br/>",
-  //   ],
+    title: "Lifestyle Labo",
+    desc: "3M 제품 사용자를 위한 플랫폼",
+    client: "3M",
+    role: "UI Development",
+    percent: "(50%)",
+    viewCode: true,
+    detailTitle: "웹퍼블리싱 | 구축, 유지보수",
+    detailInfo: [
+      "3M 제품 사용자를 위한 플랫폼 웹페이지입니다.<br/> 어드민 사이트와 엔드 유저 사이트 둘로 나뉘며, 엔드 유저용 사이트는 반응형으로 제작했습니다.<br/>",
+      "경력 퍼블리셔와 함께 작업을 진행하였고, 그 과정에서 CSS 작성법과 네이밍룰을 배울 수 있었습니다.<br/> 또, 필요한 내용을 요청하는 법, 주석을 남겨 파일을 원활하게 전달하는 법 등 함께 일하면서 필요한 기본 능력 등도 익힐 수 있었습니다.<br/>",
+      "유지보수 분량이 꽤 많았던 작업인데, 기존 CSS를 빠르게 읽고 고치는 방법과,<br/> 다른 CSS를 덮어쓰지 않도록 우선순위를 조정하는 방법 등도 숙지시켜준 즐거운 작업이었습니다.<br/>",
+    ],
 
-  //   link: false,
-  // },
+    link: false,
+  },
 
-  // "구 포트폴리오": {
-  //   show: false,
-  //   name: "old",
+  "구 포트폴리오": {
+    show: false,
+    name: "old",
 
-  //   title: "Old Portfolio",
-  //   desc: "과거 포트폴리오 (반전매력?!)",
-  //   client: "ME!",
-  //   role: "UI Development & Design",
-  //   percent: "(100%)",
-  //   viewCode: false,
-  //   detailTitle: "웹퍼블리싱 & 웹디자인 | 구축",
-  //   detailInfo: ["개인 포트폴리오"],
+    title: "Old Portfolio",
+    desc: "과거 포트폴리오 (반전매력?!)",
+    client: "ME!",
+    role: "UI Development & Design",
+    percent: "(100%)",
+    viewCode: false,
+    detailTitle: "웹퍼블리싱 & 웹디자인 | 구축",
+    detailInfo: ["개인 포트폴리오"],
 
-  //   link: true,
-  // },
+    link: true,
+  },
 
-  // "SBI 저축은행": {
-  //   show: true,
-  //   name: "sbi",
+  "SBI 저축은행": {
+    show: true,
+    name: "sbi",
 
-  //   title: "SBI BANK",
-  //   desc: "SBI저축은행 하이브리드앱",
-  //   client: "SBI Bank",
-  //   role: "UI Development",
-  //   percent: "(50%)",
-  //   viewCode: false,
-  //   detailTitle: "웹퍼블리싱 | 유지보수",
-  //   detailInfo: [
-  //     "SBI 저축은행의 앱에 추가로 들어갈 페이지를 만들어 전달드린 작업입니다.<br/> 유지보수 작업이라 쉽게 마쳤던 작업이지만, 다른 사람의 코드를 읽고 활용하는 방법을 배울 수 있었습니다.<br/> 이때 봐두었던 코드 덕분에, 나중에 웹뷰 페이지를 제작할 때 em 개념을 활용한 손쉬운 작업이 가능했습니다.",
-  //   ],
+    title: "SBI BANK",
+    desc: "SBI저축은행 하이브리드앱",
+    client: "SBI Bank",
+    role: "UI Development",
+    percent: "(50%)",
+    viewCode: false,
+    detailTitle: "웹퍼블리싱 | 유지보수",
+    detailInfo: [
+      "SBI 저축은행의 앱에 추가로 들어갈 페이지를 만들어 전달드린 작업입니다.<br/> 유지보수 작업이라 쉽게 마쳤던 작업이지만, 다른 사람의 코드를 읽고 활용하는 방법을 배울 수 있었습니다.<br/> 이때 봐두었던 코드 덕분에, 나중에 웹뷰 페이지를 제작할 때 em 개념을 활용한 손쉬운 작업이 가능했습니다.",
+    ],
 
-  //   link: false,
-  // },
+    link: false,
+  },
 
   "ICON 초기 랜딩페이지": {
     show: false,
@@ -643,7 +643,7 @@ var subPageList = [];
 
 // ======================================
 
-//서브페이지가 존재하는 work 아이템인지 파악해 변수에 넣습니다.
+//Check whether the subpage is an existing work item and put it in a variable.
 
 function checkHasSubPage() {
   for (var i in customSubPage) {
