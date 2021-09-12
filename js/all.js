@@ -587,35 +587,35 @@ var customSubPage = {
     link: true,
   },
 
-  // "SBI 저축은행": {
-  //   show: true,
-  //   name: "sbi",
+  "SBI 저축은행": {
+    show: true,
+    name: "sbi",
 
-  //   title: "SBI BANK",
-  //   desc: "SBI저축은행 하이브리드앱",
-  //   client: "SBI Bank",
-  //   role: "UI Development",
-  //   percent: "(50%)",
-  //   viewCode: false,
-  //   detailTitle: "웹퍼블리싱 | 유지보수",
-  //   detailInfo: [
-  //     "SBI 저축은행의 앱에 추가로 들어갈 페이지를 만들어 전달드린 작업입니다.<br/> 유지보수 작업이라 쉽게 마쳤던 작업이지만, 다른 사람의 코드를 읽고 활용하는 방법을 배울 수 있었습니다.<br/> 이때 봐두었던 코드 덕분에, 나중에 웹뷰 페이지를 제작할 때 em 개념을 활용한 손쉬운 작업이 가능했습니다.",
-  //   ],
+    title: "How to Draw-overs Draw person",
+    desc: "how to draw objects",
+    client: "Object",
+    role: "Student",
+    percent: "100%",
+    viewCode: false,
+    detailTitle: "how to draw objects",
+    detailInfo: [
+      "Here is a few examples of my draw-overs. Whenever I have time, I try to draw over people's work to explain my thoughts better!",
+    ],
 
-  //   link: false,
-  // },
+    link: false,
+  },
 
   "ICON 초기 랜딩페이지": {
     show: false,
     name: "icon",
 
     title: "ICON LANDING",
-    desc: "ICON 랜딩 페이지 (반응형)",
+    desc: "ICON Landingpage",
     client: "ICON Fondation",
     role: "UI Development",
     percent: "(100%)",
     viewCode: false,
-    detailTitle: "웹퍼블리싱 | 구축",
+    detailTitle: "landingpage",
     detailInfo: [""],
 
     link: true,
@@ -626,12 +626,12 @@ var customSubPage = {
     name: "vr",
 
     title: "3M VR",
-    desc: "가상현실 체험 예약 페이지 (웹, 모바일)",
+    desc: "Lifestyle Labo",
     client: "3M",
     role: "UI Development",
     percent: "(100%)",
     viewCode: true,
-    detailTitle: "웹퍼블리싱 | 구축",
+    detailTitle: "Lifestyle Labo",
     detailInfo: [""],
 
     link: true,
@@ -774,7 +774,7 @@ function generateSubPage() {
       var html_detailTop = "";
 
       html_detailTop +=
-        '<h2 class="detail_title">Lifestyle Labo <i class="detail_title_sm">' +
+        '<h2 class="detail_title">Draw everything <i class="detail_title_sm">' +
         customSubPage[i].detailTitle +
         "</i></h2>";
       html_detailTop +=
