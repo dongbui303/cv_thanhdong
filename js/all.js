@@ -774,7 +774,7 @@ function generateSubPage() {
       var html_detailTop = "";
 
       html_detailTop +=
-        '<h2 class="detail_title">Draw everything <i class="detail_title_sm">' +
+        '<h2 class="detail_title">Project Overview <i class="detail_title_sm">' +
         customSubPage[i].detailTitle +
         "</i></h2>";
       html_detailTop +=
